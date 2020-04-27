@@ -1,6 +1,6 @@
 import Toast from './Toast.vue'
 
-function init(Vue, globalOptions = {}, attach = 'body') {
+function init(Vue, globalOptions = {}) {
   let cmp = null
   const queue = []
   const property = globalOptions.property || '$toast'

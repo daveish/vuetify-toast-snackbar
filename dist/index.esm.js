@@ -345,10 +345,10 @@ var Toast = normalizeComponent_1({
 
 function init(Vue) {
   var globalOptions = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-  var attach = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'body';
   var cmp = null;
   var queue = [];
   var property = globalOptions.property || '$toast';
+  var attach = globalOptions.attach || 'body';
 
   function createCmp(options) {
     var component = new Vue(Toast);
