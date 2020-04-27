@@ -4,6 +4,7 @@ function init(Vue, globalOptions = {}, attach = 'body') {
   let cmp = null
   const queue = []
   const property = globalOptions.property || '$toast'
+  const attach = globalOptions.attach || 'body'
 
   function createCmp(options) {
     const component = new Vue(Toast)

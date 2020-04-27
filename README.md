@@ -44,9 +44,9 @@ Vue.use(VuetifyToast, {
 			color: 'purple'
 		}
 	},
-	property: '$toast' // default
-},
-'body') // default
+	property: '$toast', // default
+	attach: 'body' // default
+})
 ```
 
 ### Vue loader (e.g. Nuxt.js)
